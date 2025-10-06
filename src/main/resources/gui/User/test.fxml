@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.CourseUI">
+    <children>
+        <Label layoutX="52.0" layoutY="7.0" prefHeight="94.0" prefWidth="557.0" text="Hey, What would you like to learn today?" textFill="#ffc73e">
+            <font>
+                <Font name="Arial Bold" size="28.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="757.0" fitWidth="539.0" layoutX="551.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/nnn.png" />
+         </image>
+      </ImageView>
+        <ScrollPane layoutX="-1.0" layoutY="101.0" prefHeight="640.0" prefWidth="1106.0" styleClass="transparent" stylesheets="@../Rresources/UpdateUI.css">
+            <content>
+                <GridPane fx:id="courseListContainer">
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
+        <HBox fx:id="qrCodeImgModal" alignment="CENTER" layoutX="-1.0" layoutY="103.0" onMouseClicked="#close_QrCodeModal" prefHeight="653.0" prefWidth="868.0" styleClass="qrCodeModal" stylesheets="@../Rresources/style.css">
+            <children>
+                <ImageView fx:id="qrCodeImg" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

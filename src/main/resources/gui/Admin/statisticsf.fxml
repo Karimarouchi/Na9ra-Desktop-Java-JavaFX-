@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="1030.0" styleClass="transparent" stylesheets="@../Rresources/TestUI.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.StatisticController">
+         <children>
+      <AnchorPane fx:id="main_anchor" layoutX="-22.0" layoutY="-9.0" prefHeight="546.0" prefWidth="1030.0">
+         <children>
+            <AnchorPane layoutX="579.0" layoutY="14.0" prefHeight="126.0" prefWidth="127.0" stylesheets="@../Rresources/UI.css">
+               <children>
+                  <Label layoutX="13.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="Total tests number" textFill="#18305ea3" />
+                  <Label fx:id="total_test_number" layoutX="41.0" layoutY="37.0" prefHeight="68.0" prefWidth="46.0" style="-fx-font-size: 40px;" text="10" textAlignment="CENTER" textFill="#2b9fff">
+                     <font>
+                        <Font name="Tahoma Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bor-anchor" />
+                  <String fx:value="shadow" />
+                  <String fx:value="mid-menu" />
+               </styleClass>
+            </AnchorPane>
+            <BarChart fx:id="chart" layoutX="16.0" layoutY="64.0" prefHeight="498.0" prefWidth="526.0" stylesheets="@../Rresources/TestUI.css">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+               <styleClass>
+                  <String fx:value="chart-axis" />
+                  <String fx:value="chart-horizontal-grid-lines" />
+                  <String fx:value="chart-content" />
+                  <String fx:value="chart-bar" />
+               </styleClass>
+            </BarChart>
+            <AnchorPane layoutX="738.0" layoutY="14.0" prefHeight="126.0" prefWidth="118.0" stylesheets="@../Rresources/UI.css">
+               <children>
+                  <Label layoutX="9.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="Actif test number" textFill="#18305ea3" />
+                  <Label fx:id="actif_test_bumber" layoutX="44.0" layoutY="38.0" prefHeight="68.0" prefWidth="40.0" style="-fx-font-size: 40px;" text="5" textAlignment="CENTER" textFill="#18305e">
+                     <font>
+                        <Font name="Tahoma Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bor-anchor" />
+                  <String fx:value="shadow" />
+                  <String fx:value="mid-menu" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="882.0" layoutY="14.0" prefHeight="126.0" prefWidth="106.0" stylesheets="@../Rresources/UI.css">
+               <children>
+                  <Label layoutX="9.0" layoutY="16.0" prefHeight="26.0" prefWidth="118.0" text="Innactif tests number" textFill="#18305ea3" />
+                  <Label fx:id="innactif_test_number" layoutX="32.0" layoutY="39.0" prefHeight="68.0" prefWidth="58.0" style="-fx-font-size: 40px;" text="10" textAlignment="CENTER" textFill="#18305e">
+                     <font>
+                        <Font name="Tahoma Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bor-anchor" />
+                  <String fx:value="shadow" />
+                  <String fx:value="mid-menu" />
+               </styleClass>
+            </AnchorPane>
+            <Label layoutX="591.0" layoutY="178.0" text="Monthly reports " textFill="#18305e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="588.0" layoutY="211.0" stroke="#0000000d" strokeType="INSIDE" strokeWidth="0.5" width="415.0">
+               <styleClass>
+                  <String fx:value="anchor-p" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Rectangle>
+            <Label layoutX="621.0" layoutY="226.0" text="Average Number of Questions per Test" />
+            <Label fx:id="avg_question_number" layoutX="929.0" layoutY="241.0" prefHeight="17.0" prefWidth="32.0" text="20" />
+            <ProgressBar layoutX="622.0" layoutY="249.0" prefHeight="8.0" prefWidth="145.0" progress="0.48" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="586.0" layoutY="305.0" stroke="#0000000d" strokeType="INSIDE" strokeWidth="0.5" width="415.0">
+               <styleClass>
+                  <String fx:value="anchor-p" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Rectangle>
+            <Label layoutX="619.0" layoutY="320.0" text="Average Duration of Tests" />
+            <Label fx:id="average_duration" layoutX="927.0" layoutY="335.0" prefHeight="17.0" prefWidth="32.0" text="1H" />
+            <ProgressBar layoutX="620.0" layoutY="343.0" prefHeight="8.0" prefWidth="145.0" progress="0.35" />
+            <ProgressBar layoutX="620.0" layoutY="442.0" prefHeight="8.0" prefWidth="145.0" progress="0.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="607.0" layoutY="392.0" stroke="#1478ff" strokeType="INSIDE" strokeWidth="2.0" width="155.0">
+               <styleClass>
+                  <String fx:value="anchor-p" />
+                  <String fx:value="shadow-blue" />
+               </styleClass>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="846.0" layoutY="393.0" stroke="#c1c1c1" strokeType="INSIDE" strokeWidth="2.0" width="155.0">
+               <styleClass>
+                  <String fx:value="anchor-p" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Rectangle>
+            <Label layoutX="26.0" layoutY="23.0" text="Test statistics" textFill="#18305e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="420.0" prefHeight="27.0" prefWidth="103.0" style="-fx-font-size: 15px;" text="Highest Score">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="884.0" layoutY="419.0" prefHeight="27.0" prefWidth="96.0" style="-fx-font-size: 15px;" text="Lowest Score">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="highest_score" layoutX="653.0" layoutY="449.0" prefHeight="63.0" prefWidth="64.0" style="-fx-font-size: 30px;" text="90%" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lowest_score" layoutX="893.0" layoutY="450.0" prefHeight="63.0" prefWidth="64.0" style="-fx-font-size: 30px;" text="30%" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="956.0" layoutY="334.0" text="min" />
+            <Label layoutX="950.0" layoutY="241.0" text="Q" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

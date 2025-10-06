@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.modifierController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="514.0" stylesheets="@../Rresources/loginDesign.css">
+         <children>
+            <Label layoutX="61.0" layoutY="33.0" text="NA" textFill="#161688">
+               <font>
+                  <Font name="Tahoma Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="33.0" prefHeight="35.0" prefWidth="61.0" text="9RA" textFill="#ffc73e">
+               <font>
+                  <Font name="Tahoma Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="767.0" fitWidth="765.0" layoutX="502.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-28.0">
+               <image>
+                  <Image url="@../Rresources/3974104.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/patron.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/famille.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/calendrier.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/e-mail.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/connexion.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/homme-daffaire.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="fxedit" layoutX="114.0" layoutY="607.0" mnemonicParsing="false" onAction="#modifier" prefHeight="44.0" prefWidth="151.0" styleClass="login-btn" text="Edit">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="61.0" layoutY="105.0" prefHeight="67.0" prefWidth="306.0" text="Edit your profile">
+               <font>
+                  <Font name="Tahoma Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="316.0" layoutY="606.0" mnemonicParsing="false" onAction="#retour" prefHeight="44.0" prefWidth="151.0" styleClass="sign-btn" text="Return">
+               <stylesheets>
+                  <URL value="@../Rresources/AI.css" />
+                  <URL value="@../Rresources/loginDesign.css" />
+               </stylesheets>
+            </Button>
+            <TextField fx:id="nom" layoutX="189.0" layoutY="200.0" prefHeight="31.0" prefWidth="306.0" styleClass="textfield" text="">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="prenom" layoutX="189.0" layoutY="263.0" prefHeight="31.0" prefWidth="306.0" styleClass="textfield" stylesheets="@../Rresources/sinup.css" />
+            <DatePicker fx:id="date" layoutX="190.0" layoutY="321.0" prefHeight="38.0" prefWidth="298.0" styleClass="textfield">
+               <stylesheets>
+                  <URL value="@../Rresources/AI.css" />
+                  <URL value="@../Rresources/loginDesign.css" />
+               </stylesheets>
+            </DatePicker>
+            <TextField fx:id="mail" layoutX="190.0" layoutY="375.0" prefHeight="31.0" prefWidth="298.0" styleClass="textfield">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="mdp" layoutX="193.0" layoutY="432.0" prefHeight="31.0" prefWidth="298.0" promptText="******************" styleClass="textfield">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="fx_date_eroor1" layoutX="190.0" layoutY="358.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="fx_erro" layoutX="190.0" layoutY="414.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="fx_pswd_eroor" layoutX="190.0" layoutY="462.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="role" layoutX="193.0" layoutY="494.0" prefHeight="44.0" prefWidth="298.0" styleClass="textfield" stylesheets="@../Rresources/AI.css" />
+            <ChoiceBox fx:id="fx_actif" layoutX="348.0" layoutY="123.0" prefWidth="150.0" styleClass="sign-btn" />
+            <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="316.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../xampp/htdocs/user_image/utilisateur-actif.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fx_image_supprimer" fitHeight="31.0" fitWidth="30.0" layoutX="39.0" layoutY="609.0" onMouseClicked="#suprimer" pickOnBounds="true" preserveRatio="true" styleClass="white-bor-anchor">
+               <image>
+                  <Image url="@../Rresources/supprimer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="71.0" layoutY="43.0" text="NA" textFill="#161688">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="43.0" prefHeight="35.0" prefWidth="61.0" text="9RA" textFill="#ffc73e">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="767.0" fitWidth="765.0" layoutX="512.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/3974104.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="115.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/e-mail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="115.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/connexion.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+.admin-course-card{
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+.course__card-level {
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-font-weight: 600;
+}
+
+.course__card-btns {
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-background-color: #1478ff;
+    -fx-cursor: hand;
+}
+
+.course__card-btns:hover {
+    -fx-background-color: #0961d4;
+}
+
+.course__card-user{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #fff;
+    -fx-border-color: #1478ff;
+    -fx-border-width: 5px ;
+    -fx-border-style:solid ;
+}
+
+.courseDetails-img{
+   -fx-object-fit:cover;
+}
+
+.qrCodeModal {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}

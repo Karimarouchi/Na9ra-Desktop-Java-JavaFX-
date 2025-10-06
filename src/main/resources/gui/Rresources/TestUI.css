@@ -1,0 +1,245 @@
+.menu-btn{
+    -fx-background-radius:15px;
+    -fx-font-size:15px;
+    -fx-text-fill: #9b9aac; /* Set the default font color */
+    -fx-background-color: rgba(243, 248, 254, 1); /* Lower opacity */
+
+}
+.left-form{
+
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+}
+
+.logout-btn{
+
+
+    -fx-background-color: transparent; /* Lower opacity */
+
+}
+.right-form{
+
+    -fx-background-color: #f8fbff;}
+.mid-menu{
+    -fx-arc-height: 25px;
+    -fx-arc-width: 25px;
+}
+.blue-btn{
+    -fx-background-color: #1478FF; /* Lower opacity */
+    -fx-background-radius:10px;
+
+}
+.white-btn{
+    -fx-background-color: white; /* Lower opacity */
+    -fx-background-radius:10px;
+
+}
+.white-bor-anchor{
+    -fx-background-radius:25px;
+
+    -fx-background-color: white;}
+.lab {
+    -fx-background-color: rgba(243, 248, 254, 1); /* Lower opacity */
+    -fx-background-radius:15px;
+
+}
+.anchor-p{
+    -fx-arc-height: 25px;
+    -fx-arc-width: 25px;}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),30,0,0,0);
+}
+
+.shadow-blue{
+    -fx-effect: dropshadow(three-pass-box,rgba(20,120,255,0.25),30,0,0,0);
+}
+.aa {
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 4, 4);
+    -fx-background-insets: 12;
+    -fx-background-color: #f8fbff;
+}
+.shadow-left-menu{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.2),30,0,0,0);
+}
+.transparent{
+    -fx-background-color: white;
+}
+/* ComboBox */
+.combo-box {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-font-family: sans-serif;
+    -fx-border-color: #9b9aac;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px 0px 5px 5px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #1478FF;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #9b9aac;
+    -fx-font-size: 15px;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-font-family: sans-serif;
+    -fx-border-color: #9b9aac;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px 0px 5px 5px;
+}
+
+.text-area:focused {
+    -fx-border-color: #1478FF;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: white;
+}
+
+
+.question {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-font-family: sans-serif;
+    -fx-border-color: #9b9aac;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px 0px 5px 5px;
+}
+
+.question:focused {
+    -fx-border-color: #1478FF;
+
+}
+.add-btn{
+    -fx-background-radius:15px;
+    -fx-font-size:15px;
+    -fx-text-fill: #9b9aac; /* Set the default font color */
+    -fx-background-color: white; /* Lower opacity */
+    -fx-border-color: #9b9aac;
+    -fx-border-radius: 10px ;
+
+
+}
+.add-btn:focused {
+    -fx-border-color: #1478FF;
+    -fx-text-fill: #1478FF;
+
+}
+.check-box{
+    -fx-font-size:15px;
+    -fx-text-fill: #000000;
+
+}
+.add-btn-mini{
+    -fx-background-radius:15px;
+
+    -fx-text-fill: #9b9aac; /* Set the default font color */
+    -fx-background-color: white; /* Lower opacity */
+    -fx-border-color: white;
+    -fx-font-size: 15px ;
+
+
+}
+.add-btn-mini:focused{    -fx-text-fill: #1478FF;
+
+}
+.next_btn{ -fx-background-color: white; /* Lower opacity */
+    -fx-border-color: white;}
+.addQ-btn{
+    -fx-background-radius:15px;
+    -fx-font-size:10px;
+    -fx-text-fill: #9b9aac; /* Set the default font color */
+    -fx-background-color: white; /* Lower opacity */
+    -fx-border-color: #9b9aac;
+    -fx-border-radius: 10px ;
+    padding: 10px;
+    margin: 0;
+    position: sticky;
+    bottom: 10px;
+    z-index: 1000;
+
+
+}
+
+.addQ-btn:focused {
+    -fx-border-color: #1478FF;
+    -fx-text-fill: #1478FF;
+
+}
+/* Styling the bars */
+/* Styling the bars */
+.chart-bar {
+    -fx-bar-fill:  #FFC107; /* Green gradient for bars */
+    -fx-stroke: #333333; /* Outline color */
+    -fx-stroke-width: 1px; /* Outline width */
+}
+
+/* Hover effect */
+.chart-bar:hover {
+    -fx-bar-fill: #8BC34A; /* Yellow color for bars on hover */
+}
+
+/* Styling the axis */
+.chart-axis {
+    -fx-tick-mark-visible: true; /* Show tick marks */
+    -fx-tick-label-fill: #673AB7; /* Color of tick labels */
+    -fx-font-family: "Arial"; /* Custom font family */
+    -fx-font-size: 14px; /* Font size of tick labels */
+    -fx-tick-length: 8px; /* Custom tick mark length */
+}
+
+/* Styling grid lines */
+.chart-horizontal-grid-lines {
+    -fx-stroke-dash-array: 0.5; /* Dashed grid lines */
+    -fx-stroke: #2aa7ff; /* Color of grid lines */
+}
+.middle-menu{
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Lower opacity */
+
+}
+.btn-trans {
+    -fx-background-color: transparent; /* Adjust the padding to create space between image and text */
+}
+.grid{-fx-background-color: rgba(235, 235, 239, 0.5);
+}
+.mid-menu2{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.left-form{
+    -fx-background-color: white;}
+
+/* style.css */
+.scroll-pane {
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Change the background color of the ScrollPane */
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Color of the vertical scrollbar's track */
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Color of the vertical scrollbar's thumb */
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Color of the horizontal scrollbar's track */
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(235, 235, 239, 0.5); /* Color of the horizontal scrollbar's thumb */
+}

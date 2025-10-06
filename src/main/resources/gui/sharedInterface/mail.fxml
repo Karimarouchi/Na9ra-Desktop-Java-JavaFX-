@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.MailController">
+   <children>
+      <Label layoutX="36.0" layoutY="111.0" prefHeight="21.0" prefWidth="161.0" text="create a new password">
+         <stylesheets>
+            <URL value="@../Rresources/loginDesign.css" />
+            <URL value="@../Rresources/AI.css" />
+            <URL value="@../Rresources/sinup.css" />
+         </stylesheets>
+      </Label>
+      <Button fx:id="send_code" layoutX="313.0" layoutY="289.0" mnemonicParsing="false" onAction="#send_code" prefHeight="28.0" prefWidth="124.0" styleClass="login-btn" text="modifer">
+         <stylesheets>
+            <URL value="@../Rresources/sinup.css" />
+            <URL value="@../Rresources/loginDesign.css" />
+         </stylesheets>
+      </Button>
+      <Label layoutX="36.0" layoutY="190.0" text="repeat new instagram password" />
+      <Label fx:id="error" layoutX="99.0" layoutY="249.0" prefHeight="21.0" prefWidth="72.0" />
+      <Button fx:id="RETOUR" layoutX="152.0" layoutY="288.0" mnemonicParsing="false" onAction="#RETOUR" styleClass="sign-btn" stylesheets="@../Rresources/loginDesign.css" text="Button" />
+      <PasswordField fx:id="fx_mod" layoutX="197.0" layoutY="145.0" />
+      <PasswordField fx:id="fx_remod" layoutX="197.0" layoutY="229.0" />
+      <Label layoutX="37.0" layoutY="41.0" text="forgot password">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

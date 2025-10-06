@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="138.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.collectionitemController">
+   <children>
+      <HBox layoutX="43.0" layoutY="17.0" prefHeight="106.0" prefWidth="383.0" stylesheets="@../Rresources/AI.css">
+         <children>
+            <ImageView fx:id="imageliv" fitHeight="145.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/417255907_1142167783433758_5745633135439262233_n.png" />
+               </image></ImageView>
+            <Label fx:id="booknamecoll" alignment="TOP_CENTER" prefHeight="54.0" prefWidth="214.0" text="Book name">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="33.0" onMouseClicked="#download" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/downloads.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="left-form" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,114 @@
+.aa {
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 4, 4);
+    -fx-background-insets: 12;
+    -fx-background-color: #f8fbff;
+}
+.shadow-blue{
+    -fx-effect: dropshadow(three-pass-box,rgba(20,120,255,0.25),30,0,0,0);
+}
+.shadow-bluee{
+    -fx-effect: dropshadow(three-pass-box,rgba(70,34,143,0.7),30,0,0,0);
+}
+.mid-menu{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 20px;
+}
+/* Anchor with violet background */
+.anchor-blue {
+    -fx-background-color: #00228F;
+    /* Set text color */
+}
+
+/* Anchor with orange background */
+.anchor-orange {
+    -fx-background-color: #5EFBD7;
+}
+
+/* Anchor with light blue background */
+.anchor-light-blue {
+    -fx-background-color: #00BADE;
+}
+
+/* Anchor with red background */
+.anchor-red {
+    -fx-background-color: #4CECC9;
+}
+
+/* Anchor with dark blue background */
+.anchor-dark-blue {
+    -fx-background-color: #0074D1;
+}
+
+/* Transparent text fields */
+.text-areaa {
+    -fx-background-color: transparent;
+}
+.text-areaa .text {
+    -fx-text-fill: white; /* Text color with low opacity */
+    -fx-opacity: 0.7; /* Text opacity */
+    -fx-highlight-fill: white;
+}
+.text-areaa .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-areaa .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-areaa .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.text-areaaaa {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.3); /* White color with low opacity */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}
+.text-areaaaa .text {
+    -fx-text-fill: white; /* Text color with low opacity */
+    -fx-opacity: 0.7; /* Text opacity */
+    -fx-highlight-fill: white;
+}
+
+.text-areaaaa .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-areaaaa .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-areaaaa .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.anchor{
+
+
+    -fx-background-radius:10px;}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),30,0,0,0);
+}
+/* TextArea */
+.text-areaaa {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}
+
+/* TextField */
+.text-fieldd {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}

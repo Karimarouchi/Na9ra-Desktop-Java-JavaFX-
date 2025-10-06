@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="236.0" prefWidth="205.0" stylesheets="@../Rresources/AI.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.cardController">
+   <children>
+      <Rectangle fx:id="fx_rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="207.0" layoutX="24.0" layoutY="16.0" stroke="#1478ff" strokeType="INSIDE" strokeWidth="2.0" width="158.0">
+         <styleClass>
+            <String fx:value="anchor-p" />
+            <String fx:value="white-bor-anchor" />
+            <String fx:value="shadow" />
+            <String fx:value="shadow-blue" />
+         </styleClass>
+      </Rectangle>
+      <Label fx:id="fx_name" layoutX="77.0" layoutY="126.0" prefHeight="17.0" prefWidth="52.0" text="NOM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_prenom" layoutX="74.0" layoutY="163.0" text="PRENOM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_role" layoutX="81.0" layoutY="195.0" text="ROLE" textFill="#00000079" />
+      <ImageView fx:id="fx_image" fitHeight="62.0" fitWidth="57.0" layoutX="70.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="fx_modif" layoutX="128.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#modifier_user" prefHeight="31.0" prefWidth="30.0" styleClass="white-bor-anchor" stylesheets="@../Rresources/loginDesign.css">
+         <graphic>
+            <ImageView fx:id="fx_image_modif" fitHeight="31.0" fitWidth="30.0" onMouseClicked="#modifier_user" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Rresources/modifier-le-texte.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="fxactif" fitHeight="21.0" fitWidth="18.0" layoutX="37.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <styleClass>
+      <String fx:value="white-bor-anchor" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

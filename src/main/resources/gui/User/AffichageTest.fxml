@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="670.0" prefWidth="1068.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.AffichageTestController">
+   <children>
+      <ScrollPane layoutX="47.0" layoutY="42.0" prefHeight="546.0" prefWidth="1019.0" stylesheets="@../Rresources/UpdateUI.css">
+         <content>
+            <VBox fx:id="option_vbox" spacing="10" />
+
+         </content>
+      </ScrollPane>
+      <Label fx:id="test_Name" layoutX="46.0" text="Label" />
+      <Label fx:id="timerLabel" layoutX="948.0" layoutY="9.0" prefHeight="46.0" prefWidth="103.0" text=" 00:00:00" textFill="#585859">
+         <font>
+            <Font name="AGA Arabesque" size="18.0" />
+         </font></Label>
+      <Button fx:id="submit_btn" layoutX="962.0" layoutY="622.0" mnemonicParsing="false" onAction="#submit_btn_OnAction" prefHeight="34.0" prefWidth="94.0" styleClass="addQ-btn" stylesheets="@../Rresources/TestUI.css" text="Submit" />
+      <AnchorPane fx:id="result_anchor" layoutX="151.0" layoutY="44.0" prefHeight="487.0" prefWidth="777.0" stylesheets="@../Rresources/AI.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="377.0" layoutX="55.0" layoutY="45.0" stroke="#147aff" strokeType="INSIDE" strokeWidth="2.0" width="650.0">
+               <styleClass>
+                  <String fx:value="mid-menu" />
+                  <String fx:value="shadow-blue" />
+               </styleClass>
+            </Rectangle>
+            <Label fx:id="scoreLabel" layoutX="223.0" layoutY="150.0" prefHeight="46.0" prefWidth="424.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Your score is: 00.00%">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Button fx:id="generateButton" layoutX="546.0" layoutY="358.0" prefHeight="34.0" prefWidth="140.0" styleClass="blue-btn" text="Générer Certificat" textFill="WHITE" />
+            <Button fx:id="returnButton" layoutX="74.0" layoutY="361.0" prefHeight="34.0" prefWidth="140.0" styleClass="blue-btn" text="Retourner au test" textFill="WHITE" />
+            <Label fx:id="test_Name2" layoutX="325.0" layoutY="92.0" prefHeight="46.0" prefWidth="83.0" style="-fx-font-size: 30 px; -fx-text-fill: #141484; -fx-font-weight: bold;" text="Label" />
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

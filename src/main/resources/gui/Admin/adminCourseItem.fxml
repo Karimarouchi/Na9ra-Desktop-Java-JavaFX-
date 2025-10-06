@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="900.0" styleClass="admin-course-card" stylesheets="@../Rresources/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.AdminCourseItemController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="239.0">
+         <children>
+            <Text fx:id="titleCourse" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600; -fx-font-size: 20px;" text="JavaFx" wrappingWidth="180.015625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="134.0">
+         <children>
+            <Label fx:id="levelCourse" style="-fx-background-color: #b8d7ff2a; -fx-font-size: 14px; -fx-font-weight: 800; -fx-border-radius: 40px;" styleClass="course__card-level" text="Intermediate" textFill="#585856">
+               <padding>
+                  <Insets bottom="7.5" left="20.0" right="20.0" top="7.5" />
+               </padding>
+               <font>
+                  <Font name="Montserrat Regular" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="294.0">
+         <children>
+            <Label fx:id="descriptionCourse" prefHeight="36.0" prefWidth="284.0" style="-fx-font-size: 14px; -fx-font-weight: 600;" text="CRUD JavaFx " textFill="#585856">
+               <padding>
+                  <Insets bottom="7.5" left="20.0" right="20.0" top="7.5" />
+               </padding>
+               <font>
+                  <Font name="Montserrat Regular" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="38.0" prefWidth="223.0">
+         <children>
+            <HBox fx:id="shareFbBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="43.0" styleClass="course__card-btns">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Rresources/facebook-app-symbol.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox fx:id="qrCodeBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="43.0" styleClass="course__card-btns">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Rresources/qr-code.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox fx:id="editCourse" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="43.0" styleClass="course__card-btns">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Rresources/edit2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox fx:id="deleteCourse" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="43.0" styleClass="course__card-btns">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Rresources/trash.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</HBox>

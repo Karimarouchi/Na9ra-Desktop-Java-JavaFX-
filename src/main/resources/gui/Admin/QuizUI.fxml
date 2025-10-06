@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="midlast" prefHeight="768.0" prefWidth="1143.0" stylesheets="@../Rresources/Quiz.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.QuizController">
+    <children>
+        <AnchorPane fx:id="ajouterquiz_int" layoutX="22.0" layoutY="25.0" prefHeight="735.0" prefWidth="1118.0" stylesheets="@../Rresources/Quiz.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <AnchorPane layoutX="194.0" layoutY="14.0" prefHeight="215.0" prefWidth="736.0">
+                    <children>
+                        <Label layoutX="27.0" layoutY="144.0" text="Description" />
+                        <Label layoutX="27.0" layoutY="30.0" text="Titre" />
+                        <TextField fx:id="inputquizz_title" layoutX="110.0" layoutY="25.0" prefHeight="25.0" prefWidth="361.0" styleClass="text-fieldd" />
+                        <Label layoutX="27.0" layoutY="66.0" text="Categorie" />
+                        <ComboBox fx:id="inputquizz_cat" layoutX="111.0" layoutY="61.0" prefHeight="22.0" prefWidth="361.0">
+                            <styleClass>
+                                <String fx:value="combo-boxxx" />
+                                <String fx:value="combo-box-popupp" />
+                            </styleClass>
+                        </ComboBox>
+                        <TextArea fx:id="inputquizz_descrp" layoutX="110.0" layoutY="106.0" prefHeight="92.0" prefWidth="361.0" styleClass="text-areaaa" />
+                        <ImageView fx:id="PictureChooser" fitHeight="194.0" fitWidth="200.0" layoutX="524.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="560.0" layoutY="46.0" mnemonicParsing="false" onAction="#handlePictureBtn" prefHeight="78.0" prefWidth="64.0" styleClass="transparent-button">
+                            <graphic>
+                                <ImageView fx:id="imageviewi" fitHeight="171.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Rresources/add-image.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <styleClass>
+                        <String fx:value="mid-menu" />
+                        <String fx:value="shadow" />
+                        <String fx:value="Bg" />
+                    </styleClass>
+                </AnchorPane>
+                <Button layoutX="10.0" layoutY="3.0" mnemonicParsing="false" onAction="#back_btn_clicked" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button layoutX="1064.0" layoutY="266.0" mnemonicParsing="false" onAction="#nextquest_btn_clicked" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/forward.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button layoutX="16.0" layoutY="265.0" mnemonicParsing="false" onAction="#prevques_btn_clicked" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/backk.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <AnchorPane layoutX="16.0" layoutY="315.0" prefHeight="359.0" prefWidth="1095.0">
+                    <children>
+                        <AnchorPane prefHeight="360.0" prefWidth="1095.0">
+                            <children>
+                                <AnchorPane layoutX="15.0" layoutY="189.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afield1" layoutX="17.0" layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t1" layoutX="234.0" layoutY="8.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-dark-blue" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="284.0" layoutY="190.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afield2" layoutX="17.0" layoutY="11.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t2" layoutX="233.0" layoutY="5.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-light-blue" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="553.0" layoutY="190.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afield3" layoutX="15.0" layoutY="7.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t3" layoutX="233.0" layoutY="6.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-orange" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="823.0" layoutY="191.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afield4" layoutX="16.0" layoutY="11.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t4" layoutX="233.0" layoutY="7.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-red" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="6.0" layoutY="8.0" prefHeight="162.0" prefWidth="1084.0">
+                                    <children>
+                                        <TextArea fx:id="questionfield" layoutX="7.0" layoutY="10.0" prefHeight="150.0" prefWidth="1039.0" promptText="Ecrire question" styleClass="text-areaaaa">
+                                            <font>
+                                                <Font size="30.0" />
+                                            </font>
+                                        </TextArea>
+                                        <Button fx:id="delete" layoutX="1045.0" layoutY="5.0" mnemonicParsing="false" onAction="#delquest_btn_clicked" styleClass="transparent-button">
+                                            <graphic>
+                                                <ImageView fitHeight="34.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Rresources/deleete.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <styleClass>
+                                <String fx:value="anchor-blue" />
+                                <String fx:value="shadow-bluee" />
+                                <String fx:value="mid-menu" />
+                            </styleClass>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <Line endX="530.0" layoutX="533.0" layoutY="248.0" startX="-486.0" stroke="#0000004d" />
+                <Button graphicTextGap="20.0" layoutX="479.0" layoutY="688.0" mnemonicParsing="false" onAction="#addquiz_btn_clicked" prefHeight="39.0" prefWidth="138.0" text="Ajouter" textFill="WHITE">
+                    <styleClass>
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="blue-btn" />
+                        <String fx:value="btn-ajout" />
+                    </styleClass>
+                    <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/add.png" />
+                            </image>
+                            <viewport>
+                                <Rectangle2D />
+                            </viewport>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="geenerate_btn" graphicTextGap="10.0" layoutX="17.0" layoutY="688.0" mnemonicParsing="false" onAction="#generateButtonClicked" prefHeight="40.0" prefWidth="114.0" text="Generate" textFill="WHITE">
+                    <styleClass>
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="blue-btn" />
+                        <String fx:value="btn-ajout" />
+                    </styleClass>
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/generate.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="modquiz_int" layoutY="28.0" prefHeight="717.0" prefWidth="1126.0" stylesheets="@../Rresources/Quiz.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <AnchorPane layoutX="194.0" layoutY="14.0" prefHeight="215.0" prefWidth="736.0">
+                    <children>
+                        <Label layoutX="27.0" layoutY="144.0" text="Description" />
+                        <Label layoutX="27.0" layoutY="30.0" text="Titre" />
+                        <TextField fx:id="inputquizz_title1" layoutX="110.0" layoutY="25.0" prefHeight="25.0" prefWidth="361.0" styleClass="text-fieldd" />
+                        <Label layoutX="27.0" layoutY="66.0" text="Categorie" />
+                        <ComboBox fx:id="inputquizz_cat1" layoutX="111.0" layoutY="61.0" prefHeight="22.0" prefWidth="361.0">
+                            <styleClass>
+                                <String fx:value="combo-boxxx" />
+                                <String fx:value="combo-box-popupp" />
+                            </styleClass>
+                        </ComboBox>
+                        <TextArea fx:id="inputquizz_descrp1" layoutX="110.0" layoutY="106.0" prefHeight="92.0" prefWidth="361.0" styleClass="text-areaaa" />
+                        <ImageView fx:id="PictureChooser1" fitHeight="194.0" fitWidth="200.0" layoutX="524.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="560.0" layoutY="46.0" mnemonicParsing="false" onAction="#handlePictureBtnmod" prefHeight="78.0" prefWidth="64.0" styleClass="transparent-button">
+                            <graphic>
+                                <ImageView fx:id="imageviewi1" fitHeight="171.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Rresources/add-image.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <styleClass>
+                        <String fx:value="mid-menu" />
+                        <String fx:value="shadow" />
+                        <String fx:value="Bg" />
+                    </styleClass>
+                </AnchorPane>
+                <Button layoutX="10.0" layoutY="3.0" mnemonicParsing="false" onAction="#back_btn_clicked" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="1064.0" layoutY="266.0" mnemonicParsing="false" onAction="#nextmod" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/forward.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="16.0" layoutY="265.0" mnemonicParsing="false" onAction="#prevmod" styleClass="transparent-button">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/backk.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <AnchorPane layoutX="16.0" layoutY="315.0" prefHeight="359.0" prefWidth="1095.0">
+                    <children>
+                        <AnchorPane prefHeight="360.0" prefWidth="1095.0" stylesheets="@../Rresources/Quiz.css">
+                            <children>
+                                <AnchorPane layoutX="15.0" layoutY="189.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afieldmod1" layoutX="17.0" layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t1mod" layoutX="234.0" layoutY="8.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-dark-blue" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="284.0" layoutY="190.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afieldmod2" layoutX="17.0" layoutY="11.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t2mod" layoutX="235.0" layoutY="7.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-light-blue" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="553.0" layoutY="190.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afieldmod3" layoutX="15.0" layoutY="7.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t3mod" layoutX="233.0" layoutY="5.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-orange" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="823.0" layoutY="191.0" prefHeight="150.0" prefWidth="256.0">
+                                    <children>
+                                        <TextArea fx:id="afieldmod4" layoutX="16.0" layoutY="11.0" prefHeight="130.0" prefWidth="223.0" promptText="         Ecrire reponse" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="11.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="transparent-textfield" />
+                                                <String fx:value="text-areaa" />
+                                            </styleClass>
+                                        </TextArea>
+                                        <CheckBox fx:id="t4mod" layoutX="235.0" layoutY="5.0" mnemonicParsing="false" />
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="anchor-red" />
+                                        <String fx:value="anchor" />
+                                    </styleClass>
+                                </AnchorPane>
+                                <AnchorPane layoutX="6.0" layoutY="8.0" prefHeight="162.0" prefWidth="1084.0">
+                                    <children>
+                                        <TextArea fx:id="questionfieldmod" layoutX="7.0" layoutY="10.0" prefHeight="150.0" prefWidth="1039.0" promptText="Ecrire question" styleClass="text-areaaaa">
+                                            <font>
+                                                <Font size="30.0" />
+                                            </font>
+                                        </TextArea>
+                                        <Button fx:id="delete1" layoutX="1045.0" layoutY="5.0" mnemonicParsing="false" onAction="#deletemod" styleClass="transparent-button">
+                                            <graphic>
+                                                <ImageView fitHeight="34.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Rresources/deleete.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <styleClass>
+                                <String fx:value="anchor-blue" />
+                                <String fx:value="shadow-bluee" />
+                                <String fx:value="mid-menu" />
+                            </styleClass>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <Line endX="530.0" layoutX="533.0" layoutY="248.0" startX="-486.0" stroke="#0000004d" />
+                <Button graphicTextGap="20.0" layoutX="479.0" layoutY="688.0" mnemonicParsing="false" onAction="#modquiz_btn_clicked" prefHeight="39.0" prefWidth="138.0" text="Modifier" textFill="WHITE">
+                    <styleClass>
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="blue-btn" />
+                        <String fx:value="btn-ajout" />
+                    </styleClass>
+                    <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Rresources/add.png" />
+                            </image>
+                            <viewport>
+                                <Rectangle2D />
+                            </viewport>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <TextField fx:id="inputquizz_id1" visible="false" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="quiz_int" layoutX="7.0" layoutY="11.0" prefHeight="759.0" prefWidth="1123.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="11.0">
+            <children>
+                <AnchorPane layoutX="887.0" prefHeight="748.0" prefWidth="207.0" stylesheets="@../Rresources/Quiz.css">
+                    <children>
+                        <Label layoutX="28.0" layoutY="182.0" text="Categories">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="cat1" layoutX="28.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="General Knowledge" />
+                        <RadioButton fx:id="cat2" layoutX="28.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="Science &amp; Nature" />
+                        <RadioButton fx:id="cat3" layoutX="28.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="Science: Computers" />
+                        <RadioButton fx:id="cat4" layoutX="28.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="Science: Mathematics" />
+                        <RadioButton fx:id="cat5" layoutX="28.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="History" />
+                        <RadioButton fx:id="cat6" layoutX="28.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="Art" />
+                        <Label layoutX="31.0" layoutY="456.0" text="Nombre de questions">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="catn1" layoutX="31.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="&lt;10" />
+                        <RadioButton fx:id="catn2" layoutX="31.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="10-15" />
+                        <RadioButton fx:id="catn3" layoutX="31.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleFilterAction" styleClass="square-transparent-radio-button" text="&gt;15" />
+                        <Line endX="87.0" layoutX="105.5" layoutY="419.0" startX="-85.0" stroke="#0000001f" AnchorPane.leftAnchor="20.0" />
+                        <Line endX="87.0" layoutX="103.5" layoutY="595.0" startX="-85.0" stroke="#0000001f" AnchorPane.leftAnchor="18.0" />
+                        <Button fx:id="ajouterquiz_btn" graphicTextGap="20.0" layoutX="48.0" layoutY="57.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="122.0" text="Ajouter" textFill="WHITE">
+                            <styleClass>
+                                <String fx:value="blue-btn" />
+                                <String fx:value="shadow-blue" />
+                                <String fx:value="btn-ajout" />
+                            </styleClass>
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Rresources/add.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="748.0" prefWidth="889.0" stylesheets="@../Rresources/Quiz.css">
+                    <children>
+                        <TextField fx:id="quizrech_field" layoutX="22.0" layoutY="64.0" onInputMethodTextChanged="#filterall" onKeyPressed="#filterall" onKeyTyped="#filterall" prefHeight="25.0" prefWidth="660.0" promptText="Rechercher un quiz" />
+                        <Label layoutX="722.0" layoutY="67.0" text="Order by :" />
+                        <ComboBox fx:id="triQuiz" layoutX="781.0" layoutY="63.0" onAction="#handleFilterAction" prefHeight="25.0" prefWidth="75.0">
+                            <styleClass>
+                                <String fx:value="combo-box-basee" />
+                                <String fx:value="combo-box-popupp" />
+                                <String fx:value="combo-boxx" />
+                            </styleClass>
+                        </ComboBox>
+                        <ScrollPane layoutX="7.0" layoutY="95.0" prefHeight="641.0" prefWidth="875.0">
+                            <content>
+                                <GridPane fx:id="itemlist" alignment="CENTER" prefHeight="637.0" prefWidth="836.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <styleClass>
+                                        <String fx:value="grid-pane" />
+                                        <String fx:value="row" />
+                                    </styleClass>
+                                </GridPane>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="highscore_int" layoutY="9.0" prefHeight="748.0" prefWidth="1133.0" visible="false" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="11.0">
+            <children>
+                <AnchorPane layoutX="257.0" layoutY="28.0" prefHeight="686.0" prefWidth="430.0">
+                    <children>
+                        <Label layoutX="148.0" layoutY="25.0" prefHeight="35.0" prefWidth="109.0" text="Highscore">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <VBox fx:id="highscorevb" layoutX="12.0" layoutY="69.0" prefHeight="600.0" prefWidth="406.0" />
+                        <Button layoutX="378.0" layoutY="13.0" mnemonicParsing="false" onAction="#out_clicked" prefHeight="25.0" prefWidth="38.0" styleClass="transparent-button">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Rresources/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+               <stylesheets>
+                  <URL value="@../Rresources/Quiz.css" />
+                  <URL value="@../Rresources/UI.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="mid-menu2" />
+                  <String fx:value="Bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+                </AnchorPane>
+            </children>
+            <styleClass>
+                <String fx:value="bg_score" />
+                <String fx:value="mid-menu" />
+            </styleClass>
+        </AnchorPane>
+        <AnchorPane fx:id="playy_int" layoutY="13.0" prefHeight="744.0" prefWidth="1133.0" stylesheets="@../Rresources/UI.css" visible="false" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="11.0">
+            <styleClass>
+                <String fx:value="mid-menu" />
+                <String fx:value="left-form" />
+                <String fx:value="middle-menu" />
+            </styleClass>
+            <children>
+                <AnchorPane fx:id="bgintt" prefHeight="744.0" prefWidth="1133.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <styleClass>
+                        <String fx:value="anchor-blue" />
+                        <String fx:value="shadow-bluee" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="play_int" layoutX="7.0" layoutY="-1.0" prefHeight="745.0" prefWidth="1123.0" stylesheets="@../Rresources/Quiz.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                    <children>
+                        <AnchorPane fx:id="a1int" layoutX="16.0" layoutY="373.0" onMouseClicked="#a1play_clicked" prefHeight="351.0" prefWidth="256.0">
+                            <styleClass>
+                                <String fx:value="anchor-dark-blue" />
+                                <String fx:value="anchor" />
+                            </styleClass>
+                            <children>
+                                <Label fx:id="a1play" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="310.0" prefWidth="223.0" textFill="WHITE">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font></Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="a2int" layoutX="291.0" layoutY="374.0" onMouseClicked="#a2play_clicked" prefHeight="351.0" prefWidth="256.0">
+                            <styleClass>
+                                <String fx:value="anchor-light-blue" />
+                                <String fx:value="anchor" />
+                            </styleClass>
+                            <children>
+                                <Label fx:id="a2play" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="21.0" prefHeight="310.0" prefWidth="223.0" textFill="WHITE">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font></Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="a3int" layoutX="567.0" layoutY="376.0" onMouseClicked="#a3play_clicked" prefHeight="351.0" prefWidth="256.0">
+                            <styleClass>
+                                <String fx:value="anchor-orange" />
+                                <String fx:value="anchor" />
+                            </styleClass>
+                            <children>
+                                <Label fx:id="a3play" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="310.0" prefWidth="223.0" textFill="WHITE">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font></Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="a4int" layoutX="841.0" layoutY="378.0" onMouseClicked="#a4play_clicked" prefHeight="351.0" prefWidth="256.0">
+                            <styleClass>
+                                <String fx:value="anchor-red" />
+                                <String fx:value="anchor" />
+                            </styleClass>
+                            <children>
+                                <Label fx:id="a4play" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="22.0" prefHeight="310.0" prefWidth="223.0" textFill="WHITE">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font></Label>
+                            </children>
+                        </AnchorPane>
+                        <Label fx:id="qcount" layoutX="1071.0" layoutY="7.0" text="30" textFill="WHITE">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane fx:id="qint" layoutX="6.0" layoutY="20.0" prefHeight="310.0" prefWidth="1113.0">
+                            <children>
+                                <Button fx:id="delete11" layoutX="1045.0" layoutY="5.0" mnemonicParsing="false" onAction="#deletemod" styleClass="transparent-button" />
+                                <Label fx:id="questionplay" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="26.0" prefHeight="256.0" prefWidth="1023.0" textFill="WHITE">
+                                    <font>
+                                        <Font size="48.0" />
+                                    </font></Label>
+                            </children>
+                        </AnchorPane>
+                        <Label fx:id="correct" layoutX="258.0" layoutY="339.0" visible="false" />
+                        <Button layoutY="8.0" mnemonicParsing="false" onAction="#backa_btn_clicked" prefHeight="56.0" prefWidth="64.0" styleClass="transparent-button">
+                            <graphic>
+                                <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Rresources/backa.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <styleClass>
+                        <String fx:value="anchor-blue" />
+                        <String fx:value="shadow-bluee" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="count_int" layoutX="10.0" prefHeight="745.0" prefWidth="1123.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                    <children>
+                        <Label fx:id="count" layoutX="547.0" layoutY="320.0" text="3" textFill="WHITE">
+                            <font>
+                                <Font size="72.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <styleClass>
+                        <String fx:value="bgcount" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="nice_int" prefHeight="746.0" prefWidth="1133.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                    <children>
+                        <Label fx:id="nice" layoutX="484.0" layoutY="310.0" text="NICE" textFill="WHITE">
+                            <font>
+                                <Font size="72.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <styleClass>
+                        <String fx:value="mid-menu" />
+                        <String fx:value="bgcount" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="areyou_int" prefHeight="748.0" prefWidth="1133.0" visible="false">
+                    <children>
+                        <AnchorPane layoutX="237.0" layoutY="162.0" prefHeight="424.0" prefWidth="660.0">
+                            <children>
+                                <Label layoutX="173.0" layoutY="86.0" prefHeight="70.0" prefWidth="321.0" text="Are you Sure?">
+                                    <font>
+                                        <Font size="48.0" />
+                                    </font>
+                                </Label>
+                                <Button layoutX="606.0" layoutY="14.0" mnemonicParsing="false" onAction="#no_btn_clicked" prefHeight="25.0" prefWidth="38.0" styleClass="transparent-button">
+                                    <graphic>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Rresources/exit.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button layoutX="144.0" layoutY="292.0" mnemonicParsing="false" onAction="#sure_btn_clicked" prefHeight="25.0" prefWidth="109.0" text="Yes">
+                           <styleClass>
+                              <String fx:value="blue-btn" />
+                              <String fx:value="shadow-blue" />
+                           </styleClass></Button>
+                                <Button layoutX="439.0" layoutY="292.0" mnemonicParsing="false" onAction="#no_btn_clicked" prefHeight="25.0" prefWidth="109.0" text="No">
+                           <styleClass>
+                              <String fx:value="shadow-blue" />
+                              <String fx:value="blue-btn" />
+                           </styleClass></Button>
+                            </children>
+                     <styleClass>
+                        <String fx:value="Bg" />
+                        <String fx:value="mid-menu2" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                        </AnchorPane>
+                    </children>
+                    <styleClass>
+                        <String fx:value="bg_score" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

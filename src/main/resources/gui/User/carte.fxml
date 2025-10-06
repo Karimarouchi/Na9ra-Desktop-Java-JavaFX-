@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="324.0" stylesheets="@../Rresources/UI.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.CarteController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#cecee4" height="550.0" layoutX="3.0" layoutY="8.0" stroke="#1b1bc9" strokeWidth="10.0" width="320.0" />
+      <Label fx:id="nomit" layoutX="20.0" layoutY="14.0" prefHeight="34.0" prefWidth="281.0" text="Label" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font></Label>
+      <Label fx:id="dateit" alignment="CENTER" layoutX="46.0" layoutY="316.0" prefHeight="34.0" prefWidth="233.0" text="Label">
+         <font>
+            <Font name="Edwardian Script ITC" size="20.0" />
+         </font></Label>
+      <Label fx:id="statusit" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="51.0" prefHeight="17.0" prefWidth="144.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="typeit" alignment="CENTER" layoutX="14.0" layoutY="51.0" prefHeight="17.0" prefWidth="120.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextArea fx:id="descrpit" layoutX="35.0" layoutY="367.0" prefHeight="110.0" prefWidth="255.0" />
+
+      <Button id="shiny_r" layoutX="29.0" layoutY="494.0" mnemonicParsing="false" onAction="#supp_btn_clicked" stylesheets="@../Rresources/stylesheet.css" text="DELETE" />
+      <Button id="shiny_r" fx:id="modbtn" layoutX="195.0" layoutY="494.0" mnemonicParsing="false" stylesheets="@../Rresources/stylesheet.css" text="UPDATE" />
+      <ImageView fx:id="imageview_item" fitHeight="220.0" fitWidth="270.0" layoutX="23.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="143.0" layoutY="48.0" orientation="VERTICAL" prefHeight="26.0" prefWidth="8.0">
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Label fx:id="idit" layoutX="163.0" layoutY="14.0" prefHeight="34.0" prefWidth="120.0" text="Label" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="userit" layoutX="20.0" layoutY="306.0" prefHeight="34.0" prefWidth="120.0" text="Label" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="rate_btn" layoutX="136.0" layoutY="514.0" mnemonicParsing="false" text="Rate" />
+   </children>
+</AnchorPane>

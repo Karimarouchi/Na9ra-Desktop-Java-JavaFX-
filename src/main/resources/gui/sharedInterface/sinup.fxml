@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="514.0" stylesheets="@../Rresources/loginDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.SignUpController">
+   <children>
+      <TextField fx:id="tf_nom" layoutX="187.0" layoutY="217.0" prefHeight="31.0" prefWidth="306.0" promptText="nom" styleClass="textfield">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tf_prenom" layoutX="187.0" layoutY="270.0" prefHeight="31.0" prefWidth="306.0" promptText="prenom" styleClass="textfield">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tf_mail" layoutX="190.0" layoutY="387.0" prefHeight="31.0" prefWidth="298.0" promptText="name@gmail.com" styleClass="textfield">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font></TextField>
+      <Button fx:id="fxsinup" layoutX="71.0" layoutY="618.0" mnemonicParsing="false" onMouseClicked="#sign_up" prefHeight="38.0" prefWidth="183.0" styleClass="login-btn" text="Sign up">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font></Button>
+      <DatePicker fx:id="tf_datenes" layoutX="190.0" layoutY="326.0" prefHeight="38.0" prefWidth="298.0" promptText="date naissance" styleClass="textfield" />
+      <ChoiceBox fx:id="cb_role" layoutX="190.0" layoutY="504.0" prefHeight="44.0" prefWidth="298.0" styleClass="textfield" />
+      <Button fx:id="fx_login" layoutX="295.0" layoutY="617.0" mnemonicParsing="false" onMouseClicked="#loginclik" prefHeight="38.0" prefWidth="183.0" styleClass="sign-btn" text="login">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font></Button>
+      <Label layoutX="61.0" layoutY="33.0" text="NA" textFill="#161688">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="33.0" prefHeight="35.0" prefWidth="61.0" text="9RA" textFill="#ffc73e">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="98.0" prefHeight="35.0" prefWidth="111.0" text="Sign up">
+         <font>
+            <Font name="Tahoma Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="767.0" fitWidth="765.0" layoutX="502.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-28.0">
+         <image>
+            <Image url="@../Rresources/3974104.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/patron.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/famille.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/calendrier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/e-mail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/connexion.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="105.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/homme-daffaire.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fxedit" layoutX="213.0" layoutY="671.0" mnemonicParsing="false" onMouseClicked="#sign_up" prefHeight="38.0" prefWidth="183.0" styleClass="login-btn" text="EDIT">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="fx_erro" layoutX="193.0" layoutY="426.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_pswd_eroor" layoutX="193.0" layoutY="477.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_date_eroor1" layoutX="193.0" layoutY="367.0" prefHeight="21.0" prefWidth="111.0" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image_user" fitHeight="121.0" fitWidth="151.0" layoutX="254.0" layoutY="93.0" onMouseClicked="#image_add" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Rresources/drag-drop.gif" />
+         </image></ImageView>
+      <PasswordField fx:id="tf_pass" layoutX="193.0" layoutY="444.0" prefHeight="35.0" prefWidth="298.0" promptText="**************" styleClass="textfield" />
+      <Label fx:id="error" layoutX="68.0" layoutY="597.0" prefHeight="21.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,279 @@
+.grid-pane {
+    -fx-hgap: 20px; /* Horizontal gap between columns */
+}
+
+/* Customize spacing between rows */
+.grid-pane .row {
+    -fx-vgap: 20px; /* Vertical gap between rows */
+}
+.grid-pane .row > * {
+    -fx-alignment: top-left;
+}
+.bg_score{
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+/* Transparent ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+/* Hide Vertical ScrollBar */
+.scroll-pane .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+/* Hide Horizontal ScrollBar */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0;
+}
+.Bg{
+    -fx-background-color: white;
+}
+.transparent-button {
+    -fx-background-color: transparent;
+}
+.combo-boxx .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+}
+
+.combo-box-popupp .list-view
+{
+    -fx-background-color: white, white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popupp .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popupp .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popupp .list-view .list-cell:filled:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-basee
+{
+    -fx-background-color: white, white, white, white;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+
+.combo-box-basee:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-basee:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-basee:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-basee:disabled {
+    -fx-opacity: .4;
+}
+.square-transparent-radio-button .radio {
+    -fx-shape: "M -0.5 -0.5 h 12 v 12 h -12 Z"; /* Define a square shape for the radio button */
+    -fx-background-color: transparent; /* Make the background transparent */
+    -fx-border-radius: 2; /* Set a slight border radius */
+    -fx-border-color:    rgba(0, 0, 0, 0.3); /* Set a slightly transparent black color */ /* Set border color */
+}
+
+.square-transparent-radio-button .radio-dot {
+    -fx-background-color: black; /* Set color for the inner dot */
+    -fx-background-radius: 1; /* Set a slight border radius for the inner dot */
+}
+.blue-btn{
+    -fx-background-color: #1478FF; /* Lower opacity */
+    -fx-background-radius:10px;
+
+}
+.shadow-blue{
+    -fx-effect: dropshadow(three-pass-box,rgba(20,120,255,0.25),30,0,0,0);
+}
+.shadow-bluee{
+    -fx-effect: dropshadow(three-pass-box,rgba(70,34,143,0.7),30,0,0,0);
+}
+.mid-menu{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 0 50px 50px 0 ;
+}
+/* Anchor with violet background */
+.anchor-blue {
+    -fx-background-color: #00228F;
+    /* Set text color */
+}
+
+/* Anchor with orange background */
+.anchor-orange {
+    -fx-background-color: #5EFBD7;
+}
+
+/* Anchor with light blue background */
+.anchor-light-blue {
+    -fx-background-color: #00BADE;
+}
+
+/* Anchor with red background */
+.anchor-red {
+    -fx-background-color: #4CECC9;
+}
+
+/* Anchor with dark blue background */
+.anchor-dark-blue {
+    -fx-background-color: #0074D1;
+}
+
+/* Transparent text fields */
+.text-areaa {
+    -fx-background-color: transparent;
+        -fx-text-fill: #ffffff;
+        -fx-display-caret:true;
+
+
+
+}
+.bgcount{
+    -fx-background-color: black;
+}
+.text-areaa .content {
+    -fx-background-color: #ffffff;
+
+}
+.text-areaa .text {
+    -fx-text-fill: white; /* Text color with low opacity */
+    -fx-opacity: 0.7; /* Text opacity */
+    -fx-highlight-fill: white;
+}
+.text-areaa .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-areaa .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-areaa .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.text-areaaaa {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.3); /* White color with low opacity */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+
+        -fx-text-fill: #ffffff;
+        -fx-display-caret:true;
+
+
+}
+.text-areaaaa .content {
+    -fx-background-color: #ffffff;
+}
+.text-areaaaa .text {
+    -fx-text-fill: white; /* Text color with low opacity */
+    -fx-opacity: 0.7; /* Text opacity */
+    -fx-highlight-fill: white;
+}
+
+.text-areaaaa .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-areaaaa .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-areaaaa .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.anchor{
+
+
+    -fx-background-radius:10px;}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),30,0,0,0);
+}
+/* TextArea */
+.text-areaaa {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}
+
+/* TextField */
+.text-fieldd {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}
+
+/* ComboBox */
+.combo-boxxx {
+    -fx-background-color: #f0f0f0; /* Background color */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+}
+
+.combo-boxxx .arrow-button {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-background-radius: 0; /* No border radius */
+}
+
+.combo-boxxx .arrow {
+    -fx-background-color: #666; /* Arrow color */
+}
+
+.combo-boxxx .arrow-button:hover .arrow {
+    -fx-background-color: #444; /* Arrow color on hover */
+}
+.btn-ajout {
+     /* Adjust padding as needed */
+    -fx-alignment: center-left; /* Align content to the left */
+}
+
+.btn-ajout .label {
+    -fx-alignment: center; /* Center text vertically */
+    -fx-padding: 0 0 0 10px; /* Add padding between image and text */
+}
+
+.btn-ajout .graphic {
+    -fx-alignment: center-left; /* Align image to the left */
+}

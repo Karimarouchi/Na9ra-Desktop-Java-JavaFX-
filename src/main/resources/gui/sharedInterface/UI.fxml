@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="aa" stylesheets="@../Rresources/UI.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.UIController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="midlast" layoutX="223.0" prefHeight="768.0" prefWidth="1143.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutY="26.0" prefHeight="725.0" prefWidth="794.0" styleClass="middle-menu" stylesheets="@../Rresources/UI.css">
+                     <children>
+                        <Button layoutX="711.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="btn-trans" />
+                        <Label layoutX="22.0" layoutY="31.0" prefHeight="25.0" prefWidth="130.0" text="Dashboard">
+                           <font>
+                              <Font name="Tahoma Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="589.0" layoutY="35.0" text="20 Sep 2019, Friday" textFill="#00000074" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc2ce6c" height="143.0" layoutX="17.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="mid-menu" width="731.0" />
+                        <Label layoutX="95.0" layoutY="149.0" prefHeight="25.0" prefWidth="250.0" text="You've learned 80% of your goal this week!" />
+                        <Label layoutX="94.0" layoutY="100.0" prefHeight="61.0" prefWidth="266.0" text="Welcome back Ahmed!" textFill="#fe5981">
+                           <font>
+                              <Font name="Tahoma Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="21.0" layoutY="234.0" prefHeight="344.0" prefWidth="302.0">
+                           <children>
+                              <Label layoutX="17.0" layoutY="19.0" text="Latest Results">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="206.0" layoutY="19.0" text="More" />
+                              <ImageView fitHeight="19.0" fitWidth="50.0" layoutX="243.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/arrow.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="18.0" layoutY="58.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="155.0" layoutY="69.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="64.0" layoutY="64.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="262.0" layoutY="64.0" text="25%" />
+                              <Line endX="146.0" layoutX="142.0" layoutY="97.0" startX="-123.0" stroke="#00000026" />
+                              <Label layoutX="19.0" layoutY="107.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="156.0" layoutY="118.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="65.0" layoutY="113.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="263.0" layoutY="113.0" text="25%" />
+                              <Line endX="146.0" layoutX="143.0" layoutY="146.0" startX="-123.0" stroke="#00000026" />
+                              <Label layoutX="19.0" layoutY="157.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="156.0" layoutY="168.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="65.0" layoutY="163.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="263.0" layoutY="163.0" text="25%" />
+                              <Line endX="146.0" layoutX="144.0" layoutY="196.0" startX="-123.0" stroke="#00000026" />
+                              <Label layoutX="19.0" layoutY="209.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="156.0" layoutY="220.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="64.0" layoutY="215.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="262.0" layoutY="215.0" text="25%" />
+                              <Line endX="146.0" layoutX="143.0" layoutY="248.0" startX="-123.0" stroke="#00000026" />
+                              <Label layoutX="19.0" layoutY="259.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="155.0" layoutY="270.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="64.0" layoutY="265.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="262.0" layoutY="265.0" text="25%" />
+                              <Line endX="146.0" layoutX="142.0" layoutY="298.0" startX="-123.0" stroke="#00000026" />
+                              <Label layoutX="20.0" layoutY="307.0" prefHeight="25.0" prefWidth="46.0" text="Unit 5 -">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar layoutX="154.0" layoutY="317.0" prefHeight="10.0" prefWidth="95.0" progress="0.48" />
+                              <Label layoutX="65.0" layoutY="313.0" text="Technology" textFill="#000000a1">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="261.0" layoutY="313.0" text="25%" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="left-form" />
+                              <String fx:value="mid-menu2" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane layoutX="339.0" layoutY="234.0" prefHeight="344.0" prefWidth="410.0" stylesheets="@../Rresources/UI.css">
+                           <children>
+                              <Label layoutX="24.0" layoutY="15.0" text="Time spent on learning">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="306.0" layoutY="15.0" text="Last week" />
+                              <ImageView fitHeight="19.0" fitWidth="50.0" layoutX="367.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/down.png" />
+                                 </image>
+                              </ImageView>
+                              <BarChart layoutX="6.0" layoutY="39.0" prefHeight="305.0" prefWidth="392.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="39.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                                 <styleClass>
+                                    <String fx:value="chart-axis" />
+                                    <String fx:value="chart-horizontal-grid-lines" />
+                                    <String fx:value="chart-content" />
+                                    <String fx:value="chart-bar" />
+                                 </styleClass>
+                              </BarChart>
+                           </children>
+                           <styleClass>
+                              <String fx:value="left-form" />
+                              <String fx:value="mid-menu2" />
+                           </styleClass>
+                        </AnchorPane>
+                        <Label layoutX="23.0" layoutY="598.0" text="Your courses">
+                           <font>
+                              <Font name="Tahoma Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="696.0" layoutY="598.0" text="More" />
+                        <AnchorPane layoutX="11.0" layoutY="639.0" prefHeight="79.0" prefWidth="235.0" styleClass="low-mid-menu1" stylesheets="@../Rresources/UI.css">
+                           <children>
+                              <Label layoutX="68.0" layoutY="16.0" prefHeight="25.0" prefWidth="114.0" text="Business English" textFill="#ffffffa4" />
+                              <Label layoutX="69.0" layoutY="43.0" prefHeight="25.0" prefWidth="103.0" text="Grammar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="26.0" prefHeight="37.0" prefWidth="36.0" styleClass="niv-lab" text="B1" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="192.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/arrow1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="268.0" layoutY="641.0" prefHeight="79.0" prefWidth="228.0" styleClass="low-mid-menu2">
+                           <children>
+                              <Label layoutX="67.0" layoutY="18.0" prefHeight="25.0" prefWidth="114.0" text="Common English" textFill="#ffffffa4" />
+                              <Label layoutX="68.0" layoutY="44.0" prefHeight="25.0" prefWidth="129.0" text="Phrasal Verbs" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="28.0" prefHeight="37.0" prefWidth="36.0" styleClass="niv-lab" text="B1" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="195.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/arrow1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="515.0" layoutY="643.0" prefHeight="79.0" prefWidth="235.0" styleClass="low-mid-menu3">
+                           <children>
+                              <Label layoutX="81.0" layoutY="16.0" prefHeight="25.0" prefWidth="114.0" text="Common English" textFill="#ffffffa4" />
+                              <Label layoutX="82.0" layoutY="43.0" prefHeight="25.0" prefWidth="129.0" text="Vocabulary" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="26.0" prefHeight="37.0" prefWidth="36.0" styleClass="niv-lab" text="B1" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="193.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/arrow1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="714.0" layoutY="23.0" prefHeight="37.0" prefWidth="36.0" styleClass="msg-lab">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="25.0" fitWidth="19.0" layoutX="721.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/search.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="95.0" layoutY="174.0" prefHeight="25.0" prefWidth="250.0" text="Keep it up and improve your results!" />
+                        <ImageView fitHeight="150.0" fitWidth="258.0" layoutX="418.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/work.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="19.0" fitWidth="50.0" layoutX="730.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/arrow.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="785.0" layoutY="30.0" prefHeight="713.0" prefWidth="326.0" styleClass="left-form" stylesheets="@../Rresources/UI.css" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="21.0" text="Logout">
+                           <font>
+                              <Font name="Tahoma" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="logout_btn" layoutX="261.0" layoutY="2.0" mnemonicParsing="false" onAction="#logout" prefHeight="54.0" prefWidth="52.0" styleClass="btn-trans" stylesheets="@../Rresources/UI.css" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="2.0">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label layoutX="128.0" layoutY="286.0" text="Ahmed Ghoul">
+                           <font>
+                              <Font name="Tahoma Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="313.0" text="Student" textFill="#9b9aac" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="367.0" prefHeight="37.0" prefWidth="36.0" styleClass="niv-lab" text="B1">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="33.0" layoutY="438.0" prefHeight="37.0" prefWidth="36.0" styleClass="niv-lab" text="C1">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="91.0" layoutY="360.0" prefHeight="25.0" prefWidth="103.0" text="English">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="91.0" layoutY="387.0" prefHeight="25.0" prefWidth="103.0" text="High Intermediate" textFill="#9b9aac" />
+                        <Label layoutX="91.0" layoutY="432.0" prefHeight="25.0" prefWidth="103.0" text="French">
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="91.0" layoutY="459.0" prefHeight="25.0" prefWidth="103.0" text="Advanced" textFill="#9b9aac" />
+                        <Label layoutX="27.0" layoutY="513.0" prefHeight="19.0" prefWidth="87.0" text="Reminders">
+                           <font>
+                              <Font name="Tahoma Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="84.0" layoutY="553.0" prefHeight="25.0" prefWidth="141.0" text="Eng-Vocabulary Test">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="84.0" layoutY="580.0" prefHeight="25.0" prefWidth="103.0" text="24 sept 2024" textFill="#9b9aac" />
+                        <Label layoutX="84.0" layoutY="634.0" prefHeight="25.0" prefWidth="103.0" text="24 sept 2024" textFill="#9b9aac" />
+                        <Label layoutX="84.0" layoutY="688.0" prefHeight="25.0" prefWidth="103.0" text="24 sept 2024" textFill="#9b9aac" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/profile.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="202.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/plus.png" />
+                           </image>
+                        </ImageView>
+                        <ProgressBar layoutX="190.0" layoutY="446.0" prefHeight="13.0" prefWidth="119.0" progress="0.22" />
+                        <ProgressBar layoutX="189.0" layoutY="374.0" prefHeight="13.0" prefWidth="119.0" progress="0.48" />
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="277.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/bell.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="558.0" prefHeight="37.0" prefWidth="36.0" stylesheets="@../Rresources/UI.css">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="niv-lab" />
+                              <String fx:value="warn-lab" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="670.0" prefHeight="37.0" prefWidth="36.0" styleClass="msg-lab" stylesheets="@../Rresources/UI.css">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="615.0" prefHeight="37.0" prefWidth="36.0" styleClass="msg-lab" stylesheets="@../Rresources/UI.css">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="45.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/warn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="46.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rresources/msg.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="46.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true" styleClass="msg-lab">
+                           <image>
+                              <Image url="@../Rresources/msg.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="84.0" layoutY="610.0" prefHeight="25.0" prefWidth="141.0" text="Eng-Vocabulary Test">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="662.0" prefHeight="25.0" prefWidth="141.0" text="Eng-Vocabulary Test">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="41.0" prefHeight="677.0" prefWidth="185.0" styleClass="left-form" stylesheets="@../Rresources/UI.css" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="41.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="130.0" prefHeight="471.0" prefWidth="179.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="Dashboard_btn" graphicTextGap="30.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#Dashboard_btn_clicked" onMouseClicked="#Dashboard_btn_clicked" prefHeight="52.0" prefWidth="147.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="Dashboard">
+                           <font>
+                              <Font name="Tahoma Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/dashboard4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="cours_btn" graphicTextGap="30.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#cours_btn_clicked" prefHeight="53.0" prefWidth="119.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="Cours">
+                           <font>
+                              <Font name="Tahoma Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/course.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="evenements_btn" graphicTextGap="30.0" mnemonicParsing="false" onAction="#evenements_btn_clicked" prefHeight="54.0" prefWidth="159.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="Evenements">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/event.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="test_btn" graphicTextGap="30.0" mnemonicParsing="false" onAction="#test_btn_clicked" prefHeight="54.0" prefWidth="182.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="Tests de niveau">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/test.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="book_btn" graphicTextGap="30.0" mnemonicParsing="false" onAction="#book_btn_clicked" prefHeight="54.0" prefWidth="129.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="E-books">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/ebook.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="quizz_btn" graphicTextGap="30.0" mnemonicParsing="false" onAction="#quiz_btn_clicked" prefHeight="54.0" prefWidth="114.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="Quizs">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/quiz.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="user_btn" graphicTextGap="30.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#user_btn_clicked" prefHeight="53.0" prefWidth="119.0" styleClass="menu-btn" stylesheets="@../Rresources/UI.css" text="user">
+                           <font>
+                              <Font name="Tahoma Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Rresources/course.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Label layoutX="48.0" layoutY="9.0" text="NA" textFill="#161688">
+                     <font>
+                        <Font name="Tahoma Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="9.0" prefHeight="35.0" prefWidth="61.0" text="9RA" textFill="#ffc73e">
+                     <font>
+                        <Font name="Tahoma Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="l1" endX="100.0" endY="48.0" layoutX="88.0" layoutY="95.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l2" endX="100.0" endY="48.0" layoutX="88.0" layoutY="158.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l3" endX="100.0" endY="48.0" layoutX="88.0" layoutY="234.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l4" endX="100.0" endY="48.0" layoutX="88.0" layoutY="307.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l5" endX="100.0" endY="48.0" layoutX="88.0" layoutY="376.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l6" endX="100.0" endY="48.0" layoutX="88.0" layoutY="455.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+                  <Line fx:id="l7" endX="100.0" endY="48.0" layoutX="88.0" layoutY="513.0" startX="100.0" startY="76.0" stroke="#0b65da" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

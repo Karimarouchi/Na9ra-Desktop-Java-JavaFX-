@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1143.0" styleClass="main" stylesheets="@../Rresources/TestUI.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.TestUIController">
+    <children>
+        <AnchorPane layoutX="1.0" layoutY="13.0" prefHeight="702.0" prefWidth="1102.0" stylesheets="@../Rresources/TestUI.css">
+            <children>
+                <Label layoutX="38.0" layoutY="20.0" text="Test" textFill="#18305e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="84.0" layoutY="49.0" text="dashboard" textFill="#18305e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Button fx:id="supprimer_Test" alignment="CENTER" contentDisplay="TOP" layoutX="874.0" layoutY="26.0" mnemonicParsing="false" onAction="#supprimer_Test_clicked" prefHeight="46.0" prefWidth="198.0" text="Supprimer ">
+                    <styleClass>
+                        <String fx:value="menu-btn" />
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                    <font>
+                        <Font name="Tahoma" size="10.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="901.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Rresources/icons8-delete-24%20(4).png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="modifier_Test" alignment="CENTER" contentDisplay="TOP" layoutX="643.0" layoutY="25.0" mnemonicParsing="false" onAction="#modifier_Test_clicked" prefHeight="46.0" prefWidth="198.0" text="Modifier ">
+                    <styleClass>
+                        <String fx:value="menu-btn" />
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                    <font>
+                        <Font name="Tahoma" size="10.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="670.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Rresources/icons8-available-updates-24.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="ajouter_Test" alignment="CENTER" contentDisplay="TOP" layoutX="417.0" layoutY="24.0" mnemonicParsing="false" onAction="#ajouter_Test_clicked" prefHeight="46.0" prefWidth="198.0" text="Ajouter">
+                    <styleClass>
+                        <String fx:value="menu-btn" />
+                        <String fx:value="shadow-blue" />
+                        <String fx:value="mid-menu" />
+                    </styleClass>
+                    <font>
+                        <Font name="Tahoma" size="10.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="444.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Rresources/icons8-magic-24.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="-1.0" layoutY="108.0" prefHeight="582.0" prefWidth="1075.0">
+                    <styleClass>
+                        <String fx:value="white-bor-anchor" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                    <children>
+                        <AnchorPane fx:id="main_anchor" layoutX="24.0" layoutY="19.0" prefHeight="546.0" prefWidth="1030.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

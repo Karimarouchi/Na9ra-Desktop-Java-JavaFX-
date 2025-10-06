@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="167.0" prefWidth="125.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.TheInformants.controller.TestCardController">
+   <children>
+      <AnchorPane fx:id="cardRoot" prefHeight="167.0" prefWidth="125.0" style="-fx-padding: 20px; -fx-background-color: white;" stylesheets="@../Rresources/TestUI.css">
+         <styleClass>
+            <String fx:value="left-form" />
+            <String fx:value="mid-menu2" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <AnchorPane layoutX="49.5" layoutY="29.0" prefHeight="42.0" prefWidth="42.0" styleClass="menu-btn"> <!-- Adjust layoutX for centering -->
+               <children>
+                  <ImageView fx:id="test_logo" fitHeight="24.0" fitWidth="23.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Rresources/book2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="test_name" layoutX="52.0" layoutY="77.0" prefHeight="18.0" prefWidth="67.0" text="English test" textAlignment="CENTER" wrapText="true" /> <!-- Adjust layoutX and set prefWidth -->
+            <Label fx:id="test_desc" layoutX="35.0" layoutY="100.0" prefHeight="14.0" prefWidth="76.0" text="Toeic test level B" textAlignment="CENTER" textFill="#969696"> <!-- Adjust layoutX and set prefWidth -->
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
